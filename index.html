@@ -8,6 +8,15 @@
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
     <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
+    <script>
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "//hm.baidu.com/hm.js?ebcc19e56ff01b10bc179048485f9b6e";
+      var s = document.getElementsByTagName("script")[0]; 
+      s.parentNode.insertBefore(hm, s);
+    })();
+    </script>
   </head>
   <body>
     <section class="page-header">
@@ -74,6 +83,8 @@
 <p>给需要做事件跟踪的元素设置自定义属性 data-track-event</p>
 
 <div class="highlight highlight-text-html-basic"><pre>&lt;<span class="pl-ent">button</span> <span class="pl-e">type</span>=<span class="pl-s"><span class="pl-pds">"</span>button<span class="pl-pds">"</span></span> <span class="pl-e">data-track-event</span>&gt;注册&lt;/<span class="pl-ent">button</span>&gt;</pre></div>
+
+<p><button type="button" data-track-event>注册</button></p>
 </li>
 <li>更多关于 data-track-event 属性的设置请参考 <a href="https://github.com/ufologist/auto-track-event/blob/master/auto-track-event.js">auto-track-event.js 源码</a>
 </li>
@@ -87,6 +98,7 @@
 
     </section>
 
-  
+  <script src="//cdn.bootcss.com/jquery/1.11.1/jquery.js"></script>
+  <script src="//rawgit.com/ufologist/auto-track-event/master/auto-track-event.js"></script>
   </body>
 </html>
