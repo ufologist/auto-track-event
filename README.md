@@ -13,3 +13,28 @@
 * jQuery | Zepto
 
 ## 使用方法
+1. 在 head 结束前添加百度统计代码(已加的可以跳过)
+    ```html
+    <script>
+    var _hmt = _hmt || [];
+    (function() {
+        var hm = document.createElement("script");
+        hm.src = "//hm.baidu.com/hm.js?ebcc19e56ff01b10bc179048485f9b6e";
+        var s = document.getElementsByTagName("script")[0]; 
+        s.parentNode.insertBefore(hm, s);
+    })();
+    </script>
+    ```
+2. 在页面底部(body 结束前)添加 jQuery 或者 Zepto(已加的可以跳过)
+    ```html
+    <script src="//cdn.bootcss.com/jquery/1.11.1/jquery.js"></script>
+    ```
+3. 在页面底部(body 结束前)添加 auto-track-event.js
+    ```html
+    <script src="//rawgit.com/ufologist/auto-track-event/master/auto-track-event.js"></script>
+    ```
+4. 给需要做事件跟踪的元素设置自定义属性 data-track-event
+    ```html
+    <button type="button" data-track-event>注册</button>
+    ```
+5. 更多关于 data-track-event 属性的设置请参考 [auto-track-event.js 源码](https://github.com/ufologist/auto-track-event/blob/master/auto-track-event.js)
