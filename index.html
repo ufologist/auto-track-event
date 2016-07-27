@@ -46,6 +46,39 @@
 <h2>
 <a id="使用方法" class="anchor" href="#%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>使用方法</h2>
 
+<ol>
+<li>
+<p>在 head 结束前添加百度统计代码(已加的可以跳过)</p>
+
+<div class="highlight highlight-text-html-basic"><pre><span class="pl-s1">&lt;<span class="pl-ent">script</span>&gt;</span>
+<span class="pl-s1"><span class="pl-k">var</span> _hmt <span class="pl-k">=</span> _hmt <span class="pl-k">||</span> [];</span>
+<span class="pl-s1">(<span class="pl-k">function</span>() {</span>
+<span class="pl-s1">    <span class="pl-k">var</span> hm <span class="pl-k">=</span> <span class="pl-c1">document</span>.<span class="pl-c1">createElement</span>(<span class="pl-s"><span class="pl-pds">"</span>script<span class="pl-pds">"</span></span>);</span>
+<span class="pl-s1">    <span class="pl-smi">hm</span>.<span class="pl-smi">src</span> <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">"</span>//hm.baidu.com/hm.js?{你的百度统计ID}<span class="pl-pds">"</span></span>;</span>
+<span class="pl-s1">    <span class="pl-k">var</span> s <span class="pl-k">=</span> <span class="pl-c1">document</span>.<span class="pl-c1">getElementsByTagName</span>(<span class="pl-s"><span class="pl-pds">"</span>script<span class="pl-pds">"</span></span>)[<span class="pl-c1">0</span>]; </span>
+<span class="pl-s1">    <span class="pl-smi">s</span>.<span class="pl-c1">parentNode</span>.<span class="pl-c1">insertBefore</span>(hm, s);</span>
+<span class="pl-s1">})();</span>
+<span class="pl-s1">&lt;/<span class="pl-ent">script</span>&gt;</span></pre></div>
+</li>
+<li>
+<p>在页面底部(body 结束前)添加 jQuery 或者 Zepto(已加的可以跳过)</p>
+
+<div class="highlight highlight-text-html-basic"><pre>&lt;<span class="pl-ent">script</span> <span class="pl-e">src</span>=<span class="pl-s"><span class="pl-pds">"</span>//cdn.bootcss.com/jquery/1.11.1/jquery.js<span class="pl-pds">"</span></span>&gt;&lt;/<span class="pl-ent">script</span>&gt;</pre></div>
+</li>
+<li>
+<p>在页面底部(body 结束前)添加 auto-track-event.js</p>
+
+<div class="highlight highlight-text-html-basic"><pre>&lt;<span class="pl-ent">script</span> <span class="pl-e">src</span>=<span class="pl-s"><span class="pl-pds">"</span>//rawgit.com/ufologist/auto-track-event/master/auto-track-event.js<span class="pl-pds">"</span></span>&gt;&lt;/<span class="pl-ent">script</span>&gt;</pre></div>
+</li>
+<li>
+<p>给需要做事件跟踪的元素设置自定义属性 data-track-event</p>
+
+<div class="highlight highlight-text-html-basic"><pre>&lt;<span class="pl-ent">button</span> <span class="pl-e">type</span>=<span class="pl-s"><span class="pl-pds">"</span>button<span class="pl-pds">"</span></span> <span class="pl-e">data-track-event</span>&gt;注册&lt;/<span class="pl-ent">button</span>&gt;</pre></div>
+</li>
+<li>更多关于 data-track-event 属性的设置请参考 <a href="https://github.com/ufologist/auto-track-event/blob/master/auto-track-event.js">auto-track-event.js 源码</a>
+</li>
+</ol>
+
       <footer class="site-footer">
         <span class="site-footer-owner"><a href="https://github.com/ufologist/auto-track-event">Auto-track-event</a> is maintained by <a href="https://github.com/ufologist">ufologist</a>.</span>
 
