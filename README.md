@@ -13,6 +13,8 @@
 * jQuery | Zepto
 
 ## 使用方法
+完整使用请参考[项目主页](https://ufologist.github.io/auto-track-event/)
+
 1. 在 head 结束前添加百度统计代码(已加的可以跳过)
 
     ```html
