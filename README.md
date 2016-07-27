@@ -41,6 +41,6 @@
 4. 给需要做事件跟踪的元素设置自定义属性 data-track-event
 
     ```html
-    <button type="button" data-track-event>注册</button>
+    <button type="button" data-track-event>千万别点我</button>
     ```
 5. 更多关于 data-track-event 属性的设置请参考 [auto-track-event.js 源码](https://github.com/ufologist/auto-track-event/blob/master/auto-track-event.js)
