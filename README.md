@@ -20,7 +20,7 @@
     var _hmt = _hmt || [];
     (function() {
         var hm = document.createElement("script");
-        hm.src = "//hm.baidu.com/hm.js?ebcc19e56ff01b10bc179048485f9b6e";
+        hm.src = "//hm.baidu.com/hm.js?{你的百度统计ID}";
         var s = document.getElementsByTagName("script")[0]; 
         s.parentNode.insertBefore(hm, s);
     })();
