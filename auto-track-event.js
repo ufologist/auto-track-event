@@ -53,7 +53,9 @@ $(document.body).on('click', '[data-track-event]', function(event) {
         action = trackEventData.action;
     } else if (trackEventData.actionAttributeName) { // 从元素 data 中取
         action = $currentTarget.data(trackEventData.actionAttributeName);
-    } else { // 如果没有设置 action, 则获取默认值
+    }
+    // 如果没有设置 action, 则获取默认值
+    if (!action) {
         if ($currentTarget.is('input, select, textarea')) { // 对于表单则取表单元素的值
             action = $currentTarget.val();
         } else if ($currentTarget.is('a')) { // 对于链接有文本则取文本, 否则取链接地址
