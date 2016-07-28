@@ -44,3 +44,5 @@
     <button type="button" data-track-event>千万别点我</button>
     ```
 5. 更多关于 data-track-event 属性的设置请参考 [auto-track-event.js 源码](https://github.com/ufologist/auto-track-event/blob/master/auto-track-event.js)
+
+  ![baidu-tongji-track-event](https://ufologist.github.io/auto-track-event/baidu-tongji-track-event.png)
