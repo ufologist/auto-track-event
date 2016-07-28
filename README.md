@@ -1,5 +1,5 @@
 # auto-track-event
-让页面元素自动具有事件跟踪功能, 即前端自动打点, 自动监听页面元素的事件(click)并发送事件跟踪消息
+给页面元素自动添加事件跟踪功能, 即前端自动打点, 自动监听页面元素的事件(click)并发送事件跟踪消息
 
 即可以统计某些元素被用户使用了多少次, 例如注册按钮被点击了 1024 次
 
@@ -10,7 +10,7 @@
 
 ## 依赖
 * 百度统计
-* jQuery | Zepto
+* jQuery | Zepto | on/data/is
 
 ## 使用方法
 完整使用请参考[项目主页](https://ufologist.github.io/auto-track-event/)

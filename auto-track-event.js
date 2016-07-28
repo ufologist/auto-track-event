@@ -37,7 +37,7 @@
  */
 (function($, _hmt) {
 if (!$) {
-    throw new Error("dependency jQuery 1.7+ or Zepto 1.0+");
+    throw new Error('dependency jQuery 1.7+ or Zepto 1.0+');
 }
 
 $(document.body).on('click', '[data-track-event]', function(event) {
